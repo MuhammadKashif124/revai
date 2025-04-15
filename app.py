@@ -159,7 +159,7 @@ def perform_similarity_search(customer_id, query_embedding):
             {
                 "query_embedding": query_embedding,
                 "match_threshold": 0.3,
-                "match_count": 5,
+                "match_count": 3,
                 "table_name": table_name,
             },
         ).execute()
