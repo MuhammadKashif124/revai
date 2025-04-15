@@ -261,7 +261,7 @@ def generate_ai_response(messages):
             model="gpt-4o-mini",
             messages=messages,
             temperature=0.7,
-            max_tokens=1000,
+            max_tokens=400,
         )
         return response.choices[0].message.content
     except Exception as e:
